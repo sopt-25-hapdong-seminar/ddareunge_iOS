@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D8506D22381B39D00A5FB2A /* UITabbar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8506D12381B39D00A5FB2A /* UITabbar+Extension.swift */; };
+		9D8506D423825E7500A5FB2A /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8506D323825E7500A5FB2A /* UINavigationBar+Extension.swift */; };
+		9D8506D62382648500A5FB2A /* MySpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8506D52382648500A5FB2A /* MySpaceViewController.swift */; };
+		9D8506DC2382ACD600A5FB2A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8506DB2382ACD600A5FB2A /* CustomButton.swift */; };
+		9D8506DF2382B03F00A5FB2A /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8506DE2382B03F00A5FB2A /* CustomButton.xib */; };
+		9D896F0E2384EB29003C0BE6 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F0D2384EB29003C0BE6 /* UIButton+Extensions.swift */; };
+		9D896F1023856B6C003C0BE6 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F0F23856B6C003C0BE6 /* TabbarController.swift */; };
+		9D896F1323859B77003C0BE6 /* TabbarViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F1223859B77003C0BE6 /* TabbarViewType.swift */; };
+		9D896F15238681CD003C0BE6 /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F14238681CD003C0BE6 /* DropDownButton.swift */; };
+		9D896F172386840C003C0BE6 /* DropDownButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D896F162386840C003C0BE6 /* DropDownButton.xib */; };
+		9D896F192387BC05003C0BE6 /* NSNotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F182387BC05003C0BE6 /* NSNotificationName+Extension.swift */; };
+		A9AFB871FF7A175829E88E4D /* Pods_ddareunge_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DB45485F83B4771D72B808 /* Pods_ddareunge_iOS.framework */; };
+		F42AA9DE237FDA50005B26B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9DD237FDA50005B26B8 /* AppDelegate.swift */; };
+		F42AA9E0237FDA50005B26B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9DF237FDA50005B26B8 /* SceneDelegate.swift */; };
+		F42AA9E2237FDA50005B26B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9E1237FDA50005B26B8 /* ViewController.swift */; };
+		F42AA9E5237FDA50005B26B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42AA9E3237FDA50005B26B8 /* Main.storyboard */; };
+		F42AA9E7237FDA54005B26B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42AA9E6237FDA54005B26B8 /* Assets.xcassets */; };
+		F42AA9EA237FDA54005B26B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42AA9E8237FDA54005B26B8 /* LaunchScreen.storyboard */; };
+		F42AA9F7237FDB50005B26B8 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9F6237FDB50005B26B8 /* UIColor+Extensions.swift */; };
+		F42AA9F9237FDB7B005B26B8 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9F8237FDB7B005B26B8 /* UIImageView+Extensions.swift */; };
+		F42AA9FB237FDBD2005B26B8 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9FA237FDBD2005B26B8 /* UIView+Extensions.swift */; };
+		F42AA9FD237FDBF5005B26B8 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9FC237FDBF5005B26B8 /* UIViewController+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		114BD58E2626A27E2D39FAA3 /* Pods-ddareunge_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ddareunge_iOS.release.xcconfig"; path = "Target Support Files/Pods-ddareunge_iOS/Pods-ddareunge_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8CEF24355941B7AAA8073A8C /* Pods-ddareunge_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ddareunge_iOS.debug.xcconfig"; path = "Target Support Files/Pods-ddareunge_iOS/Pods-ddareunge_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9D8506D12381B39D00A5FB2A /* UITabbar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabbar+Extension.swift"; sourceTree = "<group>"; };
+		9D8506D323825E7500A5FB2A /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
+		9D8506D52382648500A5FB2A /* MySpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceViewController.swift; sourceTree = "<group>"; };
+		9D8506DB2382ACD600A5FB2A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		9D8506DE2382B03F00A5FB2A /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
+		9D896F0D2384EB29003C0BE6 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		9D896F0F23856B6C003C0BE6 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		9D896F1223859B77003C0BE6 /* TabbarViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewType.swift; sourceTree = "<group>"; };
+		9D896F14238681CD003C0BE6 /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
+		9D896F162386840C003C0BE6 /* DropDownButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownButton.xib; sourceTree = "<group>"; };
+		9D896F182387BC05003C0BE6 /* NSNotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotificationName+Extension.swift"; sourceTree = "<group>"; };
+		C5DB45485F83B4771D72B808 /* Pods_ddareunge_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ddareunge_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42AA9DA237FDA50005B26B8 /* ddareunge_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddareunge_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42AA9DD237FDA50005B26B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F42AA9DF237FDA50005B26B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F42AA9E1237FDA50005B26B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F42AA9E4237FDA50005B26B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F42AA9E6237FDA54005B26B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F42AA9E9237FDA54005B26B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F42AA9EB237FDA54005B26B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42AA9F6237FDB50005B26B8 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		F42AA9F8237FDB7B005B26B8 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		F42AA9FA237FDBD2005B26B8 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F42AA9FC237FDBF5005B26B8 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F42AA9D7237FDA50005B26B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AFB871FF7A175829E88E4D /* Pods_ddareunge_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60D68A2957EF7DBA753B7DFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CEF24355941B7AAA8073A8C /* Pods-ddareunge_iOS.debug.xcconfig */,
+				114BD58E2626A27E2D39FAA3 /* Pods-ddareunge_iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		718239C6511FF936B371CEAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5DB45485F83B4771D72B808 /* Pods_ddareunge_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D8506DA2382ACB600A5FB2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D8506DB2382ACD600A5FB2A /* CustomButton.swift */,
+				9D896F14238681CD003C0BE6 /* DropDownButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D8506DD2382B00E00A5FB2A /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				9D8506DE2382B03F00A5FB2A /* CustomButton.xib */,
+				9D896F162386840C003C0BE6 /* DropDownButton.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		9D896F1123859B36003C0BE6 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				9D896F1223859B77003C0BE6 /* TabbarViewType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		F42AA9D1237FDA50005B26B8 = {
+			isa = PBXGroup;
+			children = (
+				F42AA9DC237FDA50005B26B8 /* ddareunge_iOS */,
+				F42AA9DB237FDA50005B26B8 /* Products */,
+				60D68A2957EF7DBA753B7DFA /* Pods */,
+				718239C6511FF936B371CEAE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F42AA9DB237FDA50005B26B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F42AA9DA237FDA50005B26B8 /* ddareunge_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F42AA9DC237FDA50005B26B8 /* ddareunge_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F42AA9F2237FDA85005B26B8 /* Resources */,
+				F42AA9F1237FDA80005B26B8 /* Sources */,
+				F42AA9DD237FDA50005B26B8 /* AppDelegate.swift */,
+				F42AA9DF237FDA50005B26B8 /* SceneDelegate.swift */,
+				F42AA9EB237FDA54005B26B8 /* Info.plist */,
+			);
+			path = ddareunge_iOS;
+			sourceTree = "<group>";
+		};
+		F42AA9F1237FDA80005B26B8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9D896F1123859B36003C0BE6 /* Enum */,
+				F42AA9F5237FDB0D005B26B8 /* Extensions */,
+				F42AA9F4237FDAEB005B26B8 /* ViewControllers */,
+				9D8506DA2382ACB600A5FB2A /* View */,
+				9D8506DD2382B00E00A5FB2A /* Xib */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F42AA9F2237FDA85005B26B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F42AA9F3237FDAB6005B26B8 /* Storyboard */,
+				F42AA9E6237FDA54005B26B8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F42AA9F3237FDAB6005B26B8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F42AA9E8237FDA54005B26B8 /* LaunchScreen.storyboard */,
+				F42AA9E3237FDA50005B26B8 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F42AA9F4237FDAEB005B26B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F42AA9E1237FDA50005B26B8 /* ViewController.swift */,
+				9D8506D52382648500A5FB2A /* MySpaceViewController.swift */,
+				9D896F0F23856B6C003C0BE6 /* TabbarController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F42AA9F5237FDB0D005B26B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F42AA9F6237FDB50005B26B8 /* UIColor+Extensions.swift */,
+				F42AA9F8237FDB7B005B26B8 /* UIImageView+Extensions.swift */,
+				F42AA9FA237FDBD2005B26B8 /* UIView+Extensions.swift */,
+				F42AA9FC237FDBF5005B26B8 /* UIViewController+Extensions.swift */,
+				9D8506D12381B39D00A5FB2A /* UITabbar+Extension.swift */,
+				9D8506D323825E7500A5FB2A /* UINavigationBar+Extension.swift */,
+				9D896F0D2384EB29003C0BE6 /* UIButton+Extensions.swift */,
+				9D896F182387BC05003C0BE6 /* NSNotificationName+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F42AA9D9237FDA50005B26B8 /* ddareunge_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42AA9EE237FDA54005B26B8 /* Build configuration list for PBXNativeTarget "ddareunge_iOS" */;
+			buildPhases = (
+				036ECC661EDCC011711DA7E3 /* [CP] Check Pods Manifest.lock */,
+				F42AA9D6237FDA50005B26B8 /* Sources */,
+				F42AA9D7237FDA50005B26B8 /* Frameworks */,
+				F42AA9D8237FDA50005B26B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ddareunge_iOS;
+			productName = ddareunge_iOS;
+			productReference = F42AA9DA237FDA50005B26B8 /* ddareunge_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F42AA9D2237FDA50005B26B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = SwiftHelloWorld;
+				TargetAttributes = {
+					F42AA9D9237FDA50005B26B8 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = F42AA9D5237FDA50005B26B8 /* Build configuration list for PBXProject "ddareunge_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F42AA9D1237FDA50005B26B8;
+			productRefGroup = F42AA9DB237FDA50005B26B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F42AA9D9237FDA50005B26B8 /* ddareunge_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F42AA9D8237FDA50005B26B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8506DF2382B03F00A5FB2A /* CustomButton.xib in Resources */,
+				F42AA9EA237FDA54005B26B8 /* LaunchScreen.storyboard in Resources */,
+				F42AA9E7237FDA54005B26B8 /* Assets.xcassets in Resources */,
+				9D896F172386840C003C0BE6 /* DropDownButton.xib in Resources */,
+				F42AA9E5237FDA50005B26B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		036ECC661EDCC011711DA7E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ddareunge_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F42AA9D6237FDA50005B26B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42AA9FB237FDBD2005B26B8 /* UIView+Extensions.swift in Sources */,
+				9D896F0E2384EB29003C0BE6 /* UIButton+Extensions.swift in Sources */,
+				9D8506D62382648500A5FB2A /* MySpaceViewController.swift in Sources */,
+				9D896F1023856B6C003C0BE6 /* TabbarController.swift in Sources */,
+				F42AA9F9237FDB7B005B26B8 /* UIImageView+Extensions.swift in Sources */,
+				F42AA9E2237FDA50005B26B8 /* ViewController.swift in Sources */,
+				9D896F192387BC05003C0BE6 /* NSNotificationName+Extension.swift in Sources */,
+				F42AA9FD237FDBF5005B26B8 /* UIViewController+Extensions.swift in Sources */,
+				F42AA9DE237FDA50005B26B8 /* AppDelegate.swift in Sources */,
+				9D896F1323859B77003C0BE6 /* TabbarViewType.swift in Sources */,
+				9D8506D423825E7500A5FB2A /* UINavigationBar+Extension.swift in Sources */,
+				9D8506DC2382ACD600A5FB2A /* CustomButton.swift in Sources */,
+				9D8506D22381B39D00A5FB2A /* UITabbar+Extension.swift in Sources */,
+				9D896F15238681CD003C0BE6 /* DropDownButton.swift in Sources */,
+				F42AA9E0237FDA50005B26B8 /* SceneDelegate.swift in Sources */,
+				F42AA9F7237FDB50005B26B8 /* UIColor+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F42AA9E3237FDA50005B26B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F42AA9E4237FDA50005B26B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F42AA9E8237FDA54005B26B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F42AA9E9237FDA54005B26B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F42AA9EC237FDA54005B26B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F42AA9ED237FDA54005B26B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F42AA9EF237FDA54005B26B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CEF24355941B7AAA8073A8C /* Pods-ddareunge_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25UTG6U2R6;
+				INFOPLIST_FILE = ddareunge_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jaeeun.ddareunge-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F42AA9F0237FDA54005B26B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114BD58E2626A27E2D39FAA3 /* Pods-ddareunge_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25UTG6U2R6;
+				INFOPLIST_FILE = ddareunge_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jaeeun.ddareunge-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F42AA9D5237FDA50005B26B8 /* Build configuration list for PBXProject "ddareunge_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42AA9EC237FDA54005B26B8 /* Debug */,
+				F42AA9ED237FDA54005B26B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42AA9EE237FDA54005B26B8 /* Build configuration list for PBXNativeTarget "ddareunge_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42AA9EF237FDA54005B26B8 /* Debug */,
+				F42AA9F0237FDA54005B26B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F42AA9D2237FDA50005B26B8 /* Project object */;
+}
