@@ -24,6 +24,10 @@
 		9D896F2223891764003C0BE6 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F2123891764003C0BE6 /* NetworkResult.swift */; };
 		9D896F25238919BA003C0BE6 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F24238919BA003C0BE6 /* LoginData.swift */; };
 		9D896F2A238A685A003C0BE6 /* DataTransferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F29238A685A003C0BE6 /* DataTransferDelegate.swift */; };
+		9D896F2C238A6B57003C0BE6 /* SignupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F2B238A6B57003C0BE6 /* SignupService.swift */; };
+		9D896F2E238A6D91003C0BE6 /* SignupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F2D238A6D91003C0BE6 /* SignupData.swift */; };
+		9D896F30238A77E9003C0BE6 /* BicycleLookupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F2F238A77E9003C0BE6 /* BicycleLookupService.swift */; };
+		9D896F32238A7905003C0BE6 /* BicycleLookupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F31238A7905003C0BE6 /* BicycleLookupData.swift */; };
 		A9AFB871FF7A175829E88E4D /* Pods_ddareunge_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DB45485F83B4771D72B808 /* Pods_ddareunge_iOS.framework */; };
 		F42AA9DE237FDA50005B26B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9DD237FDA50005B26B8 /* AppDelegate.swift */; };
 		F42AA9E0237FDA50005B26B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9DF237FDA50005B26B8 /* SceneDelegate.swift */; };
@@ -57,6 +61,10 @@
 		9D896F2123891764003C0BE6 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		9D896F24238919BA003C0BE6 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		9D896F29238A685A003C0BE6 /* DataTransferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferDelegate.swift; sourceTree = "<group>"; };
+		9D896F2B238A6B57003C0BE6 /* SignupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupService.swift; sourceTree = "<group>"; };
+		9D896F2D238A6D91003C0BE6 /* SignupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupData.swift; sourceTree = "<group>"; };
+		9D896F2F238A77E9003C0BE6 /* BicycleLookupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicycleLookupService.swift; sourceTree = "<group>"; };
+		9D896F31238A7905003C0BE6 /* BicycleLookupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicycleLookupData.swift; sourceTree = "<group>"; };
 		C5DB45485F83B4771D72B808 /* Pods_ddareunge_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ddareunge_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42AA9DA237FDA50005B26B8 /* ddareunge_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddareunge_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42AA9DD237FDA50005B26B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,7 +138,9 @@
 		9D896F1C23891635003C0BE6 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				9D896F2F238A77E9003C0BE6 /* BicycleLookupService.swift */,
 				9D896F1D23891662003C0BE6 /* LoginService.swift */,
+				9D896F2B238A6B57003C0BE6 /* SignupService.swift */,
 				9D896F1F238916A6003C0BE6 /* APIConstants.swift */,
 				9D896F2123891764003C0BE6 /* NetworkResult.swift */,
 			);
@@ -141,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				9D896F24238919BA003C0BE6 /* LoginData.swift */,
+				9D896F2D238A6D91003C0BE6 /* SignupData.swift */,
+				9D896F31238A7905003C0BE6 /* BicycleLookupData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -360,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42AA9FB237FDBD2005B26B8 /* UIView+Extensions.swift in Sources */,
+				9D896F32238A7905003C0BE6 /* BicycleLookupData.swift in Sources */,
 				9D896F0E2384EB29003C0BE6 /* UIButton+Extensions.swift in Sources */,
 				9D896F25238919BA003C0BE6 /* LoginData.swift in Sources */,
 				9D8506D62382648500A5FB2A /* MySpaceViewController.swift in Sources */,
@@ -372,11 +385,14 @@
 				F42AA9FD237FDBF5005B26B8 /* UIViewController+Extensions.swift in Sources */,
 				F42AA9DE237FDA50005B26B8 /* AppDelegate.swift in Sources */,
 				9D896F1323859B77003C0BE6 /* TabbarViewType.swift in Sources */,
+				9D896F2C238A6B57003C0BE6 /* SignupService.swift in Sources */,
 				9D896F2223891764003C0BE6 /* NetworkResult.swift in Sources */,
 				9D8506D423825E7500A5FB2A /* UINavigationBar+Extension.swift in Sources */,
 				9D8506DC2382ACD600A5FB2A /* CustomButton.swift in Sources */,
+				9D896F30238A77E9003C0BE6 /* BicycleLookupService.swift in Sources */,
 				9D8506D22381B39D00A5FB2A /* UITabbar+Extension.swift in Sources */,
 				9D896F1E23891662003C0BE6 /* LoginService.swift in Sources */,
+				9D896F2E238A6D91003C0BE6 /* SignupData.swift in Sources */,
 				9D896F1B23890A32003C0BE6 /* LoginViewController.swift in Sources */,
 				9D896F15238681CD003C0BE6 /* DropDownButton.swift in Sources */,
 				F42AA9E0237FDA50005B26B8 /* SceneDelegate.swift in Sources */,

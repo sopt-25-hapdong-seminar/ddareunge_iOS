@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBarView: UIView!
     @IBOutlet var dropMenuButtons: [UIButton]!
     
+    private var bicycleOffices: [BicycleOffice] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,6 +29,7 @@ class ViewController: UIViewController {
         setLocationLabel()
         setSearchBarView()
         addObservers()
+        loadBicycleNumberOfOffice()
         dropMenuButtons.forEach { button in
             button.isHidden = true
         }
@@ -109,6 +112,23 @@ class ViewController: UIViewController {
     private func setSearchBarView() {
         searchBarView.makeShadow()
         searchBarView.layer.cornerRadius = 10
+    }
+    
+    private func loadBicycleNumberOfOffice() {
+        BicycleLookupService.shared.lookup { networkResult in
+            switch networkResult {
+            case .success(let data):
+                guard let bicycleOffices = data as? [BicycleOffice] else { return }
+                self.bicycleOffices = bicycleOffices
+            case .requestErr(let message):
+                guard let message = message as? String else { return }
+                self.simpleAlert(title: message, message: "전체를 조회하는데 실패하였습니다. 다시 시도해주세요")
+            case .serverErr: print(".serverErr")
+            case .pathErr: print("pathErr")
+            case .networkFail:
+                self.simpleAlert(title: "네트워크오류", message: "네트워크 연결을 확인해주세요")
+            }
+        }
     }
 }
 

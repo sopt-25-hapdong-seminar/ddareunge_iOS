@@ -22,6 +22,24 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func doSignup(_ sender: Any) {
+        SignupService.shared.signup(userId: "Hi", userPwd: "1235") { networkResult in
+            switch networkResult {
+            case .success(let message):
+                guard let message = message as? String else { return }
+                self.simpleAlert(title: message, message: "")
+                // 뷰 전환하는 코드
+                
+            case .requestErr(let message):
+                guard let message = message as? String else { return }
+                self.simpleAlert(title: message, message: "")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                self.simpleAlert(title: "네트워크 오류", message: "네트워크 연결을 확인해주세요")
+            }
+        }
     }
     
     @IBAction func doSignin(_ sender: Any) {
@@ -38,16 +56,14 @@ class LoginViewController: UIViewController {
                 tabbarController.modalPresentationStyle = .fullScreen
                 self.present(tabbarController, animated: true, completion: nil)
             case .requestErr(let message):
-                print(message)
+                guard let message = message as? String else { return }
+                self.simpleAlert(title: message, message: "ID, PW을 확인해주세요")
             case .pathErr:
                 print(".pathErr")
             case .serverErr:
                 print(".serverErr")
             case .networkFail:
-                guard let tabbarController = self.storyboard?.instantiateViewController(identifier: "mainTabbarController") as? TabbarController else { return }
-                tabbarController.modalPresentationStyle = .fullScreen
-                self.present(tabbarController, animated: true, completion: nil)
-                print("networFail")
+                self.simpleAlert(title: "네트워크 오류", message: "네트워크 연결을 확인해주세요")
             }
         }
     }

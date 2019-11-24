@@ -12,4 +12,5 @@ struct APIConstants {
     static let baseURL = "http://3.18.41.203:3000/"
     static let loginURL = baseURL + "users/signin"
     static let signupURL = baseURL + "users/signup"
+    static let bicyclieLookupURL = baseURL + "offices"
 }

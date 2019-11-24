@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct LoginData: Codable {
     let success: Bool
     let message: String
