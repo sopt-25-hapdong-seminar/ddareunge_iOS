@@ -16,11 +16,17 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        
     }
     
     @IBAction func doSignup(_ sender: Any) {
+        guard let id = idTextField.text else { return }
+        guard let pw = pwTextField.text else  { return }
+        
+        LoginService.shared.login(id, pw) { data in
+        }
     }
     
     @IBAction func doSignin(_ sender: Any) {

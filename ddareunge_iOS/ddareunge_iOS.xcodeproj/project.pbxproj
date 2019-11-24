@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,10 @@
 		9D896F172386840C003C0BE6 /* DropDownButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D896F162386840C003C0BE6 /* DropDownButton.xib */; };
 		9D896F192387BC05003C0BE6 /* NSNotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F182387BC05003C0BE6 /* NSNotificationName+Extension.swift */; };
 		9D896F1B23890A32003C0BE6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F1A23890A32003C0BE6 /* LoginViewController.swift */; };
+		9D896F1E23891662003C0BE6 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F1D23891662003C0BE6 /* LoginService.swift */; };
+		9D896F20238916A6003C0BE6 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F1F238916A6003C0BE6 /* APIConstants.swift */; };
+		9D896F2223891764003C0BE6 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F2123891764003C0BE6 /* NetworkResult.swift */; };
+		9D896F25238919BA003C0BE6 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D896F24238919BA003C0BE6 /* LoginData.swift */; };
 		A9AFB871FF7A175829E88E4D /* Pods_ddareunge_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DB45485F83B4771D72B808 /* Pods_ddareunge_iOS.framework */; };
 		F42AA9DE237FDA50005B26B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9DD237FDA50005B26B8 /* AppDelegate.swift */; };
 		F42AA9E0237FDA50005B26B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AA9DF237FDA50005B26B8 /* SceneDelegate.swift */; };
@@ -47,6 +51,10 @@
 		9D896F162386840C003C0BE6 /* DropDownButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownButton.xib; sourceTree = "<group>"; };
 		9D896F182387BC05003C0BE6 /* NSNotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotificationName+Extension.swift"; sourceTree = "<group>"; };
 		9D896F1A23890A32003C0BE6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D896F1D23891662003C0BE6 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		9D896F1F238916A6003C0BE6 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		9D896F2123891764003C0BE6 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		9D896F24238919BA003C0BE6 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
 		C5DB45485F83B4771D72B808 /* Pods_ddareunge_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ddareunge_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42AA9DA237FDA50005B26B8 /* ddareunge_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ddareunge_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42AA9DD237FDA50005B26B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +125,24 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
+		9D896F1C23891635003C0BE6 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				9D896F1D23891662003C0BE6 /* LoginService.swift */,
+				9D896F1F238916A6003C0BE6 /* APIConstants.swift */,
+				9D896F2123891764003C0BE6 /* NetworkResult.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		9D896F23238919B1003C0BE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D896F24238919BA003C0BE6 /* LoginData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F42AA9D1237FDA50005B26B8 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +176,7 @@
 		F42AA9F1237FDA80005B26B8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9D896F23238919B1003C0BE6 /* Model */,
 				9D896F1123859B36003C0BE6 /* Enum */,
 				F42AA9F5237FDB0D005B26B8 /* Extensions */,
 				F42AA9F4237FDAEB005B26B8 /* ViewControllers */,
@@ -162,6 +189,7 @@
 		F42AA9F2237FDA85005B26B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9D896F1C23891635003C0BE6 /* APIService */,
 				F42AA9F3237FDAB6005B26B8 /* Storyboard */,
 				F42AA9E6237FDA54005B26B8 /* Assets.xcassets */,
 			);
@@ -214,6 +242,7 @@
 				F42AA9D6237FDA50005B26B8 /* Sources */,
 				F42AA9D7237FDA50005B26B8 /* Frameworks */,
 				F42AA9D8237FDA50005B26B8 /* Resources */,
+				B7E90F12EA8591381D9BB06E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,6 +324,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B7E90F12EA8591381D9BB06E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ddareunge_iOS/Pods-ddareunge_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ddareunge_iOS/Pods-ddareunge_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ddareunge_iOS/Pods-ddareunge_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -304,17 +350,21 @@
 			files = (
 				F42AA9FB237FDBD2005B26B8 /* UIView+Extensions.swift in Sources */,
 				9D896F0E2384EB29003C0BE6 /* UIButton+Extensions.swift in Sources */,
+				9D896F25238919BA003C0BE6 /* LoginData.swift in Sources */,
 				9D8506D62382648500A5FB2A /* MySpaceViewController.swift in Sources */,
 				9D896F1023856B6C003C0BE6 /* TabbarController.swift in Sources */,
 				F42AA9F9237FDB7B005B26B8 /* UIImageView+Extensions.swift in Sources */,
+				9D896F20238916A6003C0BE6 /* APIConstants.swift in Sources */,
 				F42AA9E2237FDA50005B26B8 /* ViewController.swift in Sources */,
 				9D896F192387BC05003C0BE6 /* NSNotificationName+Extension.swift in Sources */,
 				F42AA9FD237FDBF5005B26B8 /* UIViewController+Extensions.swift in Sources */,
 				F42AA9DE237FDA50005B26B8 /* AppDelegate.swift in Sources */,
 				9D896F1323859B77003C0BE6 /* TabbarViewType.swift in Sources */,
+				9D896F2223891764003C0BE6 /* NetworkResult.swift in Sources */,
 				9D8506D423825E7500A5FB2A /* UINavigationBar+Extension.swift in Sources */,
 				9D8506DC2382ACD600A5FB2A /* CustomButton.swift in Sources */,
 				9D8506D22381B39D00A5FB2A /* UITabbar+Extension.swift in Sources */,
+				9D896F1E23891662003C0BE6 /* LoginService.swift in Sources */,
 				9D896F1B23890A32003C0BE6 /* LoginViewController.swift in Sources */,
 				9D896F15238681CD003C0BE6 /* DropDownButton.swift in Sources */,
 				F42AA9E0237FDA50005B26B8 /* SceneDelegate.swift in Sources */,
