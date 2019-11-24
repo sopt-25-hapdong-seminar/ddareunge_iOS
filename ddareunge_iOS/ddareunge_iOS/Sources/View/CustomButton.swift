@@ -50,5 +50,6 @@ extension CustomButton {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.customView?.backgroundColor = .white
         arrowImage.tintColor = UIColor(red: 224/255, green: 224/255, blue: 224/255, alpha: 1.0)
+        NotificationCenter.default.post(name: .clickCustomButton, object: nil, userInfo: ["button": self])
     }
 }

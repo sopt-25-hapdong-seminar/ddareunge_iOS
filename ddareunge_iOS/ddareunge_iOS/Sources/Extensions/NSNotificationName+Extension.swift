@@ -10,4 +10,5 @@ import UIKit
 
 extension NSNotification.Name {
     static let clickDropDownButton = NSNotification.Name("clickDropDownButton")
+    static let clickCustomButton = NSNotification.Name("clickCustomButton")
 }

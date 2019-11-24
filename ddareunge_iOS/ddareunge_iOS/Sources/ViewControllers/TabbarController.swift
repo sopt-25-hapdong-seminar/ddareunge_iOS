@@ -58,7 +58,8 @@ extension TabbarController: UITabBarControllerDelegate {
         guard let controllers = tabBarController.viewControllers else { return }
         
         switch viewController {
-        case controllers[TabbarViewType.mySpace.rawValue]: centerButton?.removeFromSuperview()
+        case controllers[TabbarViewType.mySpace.rawValue]:
+            centerButton?.removeFromSuperview()
             viewController.tabBarController?.tabBar.isHidden = true
         default:
             if !isExistCenterButton() {

@@ -9,7 +9,6 @@
 import UIKit
 
 class MySpaceViewController: UIViewController {
-    
     @IBOutlet weak var profileView: UIView!
     @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var profileLabel: UILabel!
@@ -31,6 +30,7 @@ class MySpaceViewController: UIViewController {
         setProfileLabel(id: "SOPT5 :)")
         setTicketView()
         setCustomButtons()
+        addObserver()
     }
     
     private func setProfileImage() {
@@ -73,5 +73,23 @@ class MySpaceViewController: UIViewController {
         guard let tabbarController = self.tabBarController as? TabbarController else { return }
         tabbarController.addCenterButton()
         tabbarController.selectedIndex = TabbarViewType.home.rawValue
+    }
+}
+
+extension MySpaceViewController {
+    private func addObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(goNextView(_:)), name: .clickCustomButton, object: nil)
+    }
+    
+    @objc func goNextView(_ notification: NSNotification) {
+        guard let customButton = notification.userInfo?["button"] as? CustomButton else { return }
+        switch customButton {
+        case personalInformManageButton:
+            guard let profileViewController = self.storyboard?.instantiateViewController(identifier: "ProfileViewController") as? ProfileViewController else { return }
+            self.navigationController?.pushViewController(profileViewController, animated: true)
+        case payManageButton: print("payManageButton")
+        case useInformManageButton: print("userInformManageButton")
+        default: print("default")
+        }
     }
 }

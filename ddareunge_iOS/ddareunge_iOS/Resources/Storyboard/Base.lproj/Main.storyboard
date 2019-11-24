@@ -411,6 +411,41 @@
             </objects>
             <point key="canvasLocation" x="2868.115942028986" y="852.45535714285711"/>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="cKX-5h-KIw">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="m4i-Ew-5ne" customClass="ProfileViewController" customModule="ddareunge_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q9i-dl-GR0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYs-o2-Oow">
+                                <rect key="frame" x="186" y="234" width="42" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEe-K9-1X9">
+                                <rect key="frame" x="186" y="344" width="42" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fWy-A5-3g9"/>
+                    </view>
+                    <connections>
+                        <outlet property="userIdLabel" destination="FEe-K9-1X9" id="GvE-re-jUB"/>
+                        <outlet property="userIdxLabel" destination="ZYs-o2-Oow" id="yPq-qs-x3O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycV-P5-XST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3673.913043478261" y="851.78571428571422"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="9Pf-eL-0JK">
             <objects>
