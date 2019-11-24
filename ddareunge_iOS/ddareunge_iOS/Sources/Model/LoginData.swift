@@ -16,6 +16,6 @@ struct LoginData: Codable {
 }
 
 struct UserData: Codable {
+    let userIdx: String
     let userId: String
-    let userPwd: String
 }

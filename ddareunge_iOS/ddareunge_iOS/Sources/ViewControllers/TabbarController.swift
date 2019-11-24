@@ -10,6 +10,7 @@ import UIKit
 
 class TabbarController: UITabBarController {
     private var centerButton: UIButton?
+    var userData: UserData?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,5 +73,11 @@ extension TabbarController: UITabBarControllerDelegate {
             if view == centerButton { return true }
         }
         return false
+    }
+}
+
+extension TabbarController: DataTransferDelegate {
+    func transferData(_ userData: UserData) {
+        self.userData = userData
     }
 }
