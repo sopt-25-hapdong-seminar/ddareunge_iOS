@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var signinButton: UIButton!
-    
+
     private var dataTransferDelegate: DataTransferDelegate?
     
     override func viewDidLoad() {
